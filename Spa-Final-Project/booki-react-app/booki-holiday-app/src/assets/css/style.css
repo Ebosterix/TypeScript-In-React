@@ -1,0 +1,1643 @@
+@media screen and (max-width: 1023px) {
+  * {
+    font-family: "Raleway", sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #body-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: #000;
+  }
+
+  h2 {
+    padding-left: 5%;
+    margin-bottom: 0px;
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  #item-search p {
+    margin-top: 15px;
+    font-size: 1em;
+  }
+
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0px 3% 0px 3%;
+  }
+  .logo-reservia {
+    max-height: 3em;
+    min-height: 1em;
+  }
+
+  .logo-container {
+    width: 65%;
+    padding-top: 20px;
+    margin-left: 5%;
+
+    /*logo container/wrap*/
+  }
+
+  .nav-item1 {
+    /*Accommodations*/
+    order: 3;
+    flex-basis: auto;
+    flex: 1;
+    justify-content: center;
+    padding: 20px 0 15px 0;
+    border-bottom: 3px solid #f2f2f2;
+    text-align: center;
+  }
+
+  .nav-item1 a,
+  .nav-item2 a {
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  a.nav-item1:hover,
+  a.nav-item2:hover {
+    color: #0065fc;
+    border-bottom: 3px solid #0065fc;
+  }
+
+  a.nav-item1:active,
+  a.nav-item2:active {
+    color: #0065fc;
+    border-bottom: 3px solid #0065fc;
+  }
+
+  .nav-item2 {
+    /*Activities*/
+    order: 4;
+    flex-basis: auto;
+    flex: 1;
+    justify-content: center;
+    padding: 20px 0 15px 0;
+    border-bottom: 3px solid #f2f2f2;
+    text-align: center;
+  }
+
+  .nav-item2 a {
+    color: #0065fc;
+  }
+
+  .nav-item3 {
+    /*Sign Up*/
+    order: 2;
+    align-self: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 20%;
+    font-weight: 600;
+    color: #0065fc;
+    font-size: 1em;
+    padding-right: 0;
+    padding-top: 20px;
+  }
+
+  .nav-item3 a {
+    color: #0065fc;
+  }
+
+  /* ------------------- SEARCH -------------------- */
+
+  .item-search {
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 5%;
+    padding-bottom: 1em;
+  }
+
+  .item-search h2 {
+    padding: 0;
+  }
+
+  .search-box {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-right: 5%;
+  }
+
+  .search-field {
+    width: 45%;
+    font-size: 1em;
+    font-weight: 600;
+    border: 2px solid #f2f2f2;
+    height: 44px;
+    padding-left: 10px;
+  }
+
+  ::placeholder {
+    color: black;
+    font-weight: 600;
+    opacity: 1;
+  }
+
+  i[class="fas fa-map-marker-alt"] {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+
+    border-radius: 15px 0 0 15px;
+    font-size: 18px;
+    line-height: 50px;
+    background-color: #f2f2f2;
+  }
+
+  .search-button {
+    width: 50px;
+    height: auto;
+    margin-left: -10px;
+
+    font-size: 16px;
+    background-color: #0065fc;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+  }
+
+  i.display-icon {
+    display: inline;
+  }
+
+  span.search-title {
+    display: none;
+  }
+
+  input:focus {
+    background-color: white;
+    outline-style: none;
+    height: fit-content;
+  }
+
+  /* ------------------- Filter -------------------- */
+
+  #filters {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    padding-left: 5%;
+    padding-bottom: 2em;
+  }
+
+  #filters div {
+    height: 30px;
+    margin-bottom: 10px;
+  }
+
+  #filters h3 {
+    width: 100%;
+  }
+
+  .filter-icons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 8px 20px 8px 0px;
+    border: 2px solid #ccc;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-left: none;
+  }
+
+  .filter-icons a {
+    padding-left: 10px;
+    font-size: 1em;
+  }
+
+  .filter-icons:hover {
+    background-color: white;
+    border-color: white;
+    border-style: inset;
+  }
+
+  .filter-icons > a:visited,
+  .filter-icons > a:link {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }
+
+  i[class="fas fa-money-bill-wave"] {
+    width: 50px;
+    height: 50px;
+
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-left: -25px;
+
+    text-align: center;
+    line-height: 50px;
+    font-size: 1em;
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+  }
+
+  i[class="fas fa-heart"] {
+    width: 50px;
+    height: 50px;
+
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-left: -25px;
+
+    text-align: center;
+    line-height: 50px;
+    font-size: 1em;
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+  }
+
+  i[class="fas fa-child"] {
+    width: 50px;
+    height: 50px;
+
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-left: -25px;
+
+    text-align: center;
+    line-height: 50px;
+    font-size: 1em;
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+  }
+
+  i[class="fas fa-dog"] {
+    width: 50px;
+    height: 50px;
+
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-left: -25px;
+
+    text-align: center;
+    line-height: 50px;
+    font-size: 1em;
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+  }
+
+  .info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+
+  .info p {
+    width: 100%;
+    margin-top: 4px;
+  }
+
+  .info br {
+    display: none;
+  }
+
+  .info-icon {
+    font-family: "Courier";
+    display: inline-block;
+    text-align: center;
+    line-height: 16px;
+    padding: 2px 1px 0px 1px;
+    margin-right: 10px;
+    font-size: 14px;
+    width: 22px;
+    height: 20px;
+    color: #0065fc;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+
+  /* ----------------------- MOST POPULAR */
+
+  main {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+  }
+  #most-popular {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    padding: 0 0;
+    margin: 0;
+    width: 100% !important;
+  }
+  #chart-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding-bottom: 25px;
+  }
+
+  .chart-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    flex: 3;
+    width: 90%;
+    margin: 5px 0px 10px 5%;
+  }
+
+  .chart-header h2 {
+    display: flex;
+    padding-left: 0;
+  }
+
+  i[class="fas fa-chart-line"] {
+    display: flex;
+    align-self: flex-end;
+    margin-left: auto;
+    font-size: 1.4em;
+  }
+
+  .chart-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15px;
+
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    background-color: white;
+
+    box-shadow: 0px 10px 15px 0px rgba(220, 220, 220, 0.8);
+  }
+
+  .chart-box .chart-image-1 {
+    width: 40%;
+    height: 135px;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    background-image: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .chart-box .chart-image-2 {
+    width: 40%;
+    height: 135px;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    background-image: url("images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .chart-box .chart-image-3 {
+    width: 40%;
+    height: 135px;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    background-image: url("images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .test {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    width: 55%;
+    margin: 0;
+  }
+
+  h5 {
+    font-size: 1.1em;
+    margin: 10px 10px 0px 0;
+    padding-left: 10px;
+  }
+
+  .test p {
+    font-size: 0.9em;
+    margin-top: 5px;
+    padding-left: 10px;
+  }
+
+  .rating {
+    width: 80%;
+    margin-top: 0;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    letter-spacing: -0.1em;
+  }
+
+  i[class="fas fa-star"] {
+    font-size: 0.7em;
+    color: #0065fc;
+  }
+  .gray-star {
+    font-size: 0.7em;
+    color: #a4a29b;
+  }
+
+  /* ---------------ACCOMMODATIONS --------------------- */
+
+  #accom {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 16px;
+
+    background-color: #f2f2f2;
+  }
+
+  #accom a,
+  #accom a:visited,
+  #accom a:link,
+  #accom a:hover {
+    font-size: 1.1em;
+    margin-top: 20px;
+    margin-left: 5%;
+    color: black;
+  }
+  #accom h2 {
+    font-size: 1.4em;
+    padding-left: 5%;
+  }
+
+  .hotel-icons {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 10px 15px 5px 0px;
+
+    border-radius: 15px;
+    background-color: white;
+
+    box-shadow: 0px 10px 15px 0px rgba(220, 220, 220, 0.6);
+  }
+  .hotel-icons .image {
+    height: 110px;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hotel-icons .image-2 {
+    height: 110px;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-image: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .hotel-icons .image-3 {
+    height: 110px;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-image: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .hotel-icons .image-4 {
+    height: 110px;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-image: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .hotel-icons .image-5 {
+    height: 110px;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-image: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .hotel-icons .image-6 {
+    height: 110px;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .hotels {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 90%;
+    padding-left: 5px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    margin: 0;
+  }
+
+  .hotels h5 {
+    font-size: 1em;
+    margin: 5px 0px 1px 0px;
+    padding-left: 10px;
+  }
+
+  .hotels p {
+    font-size: 0.8em;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+  }
+
+  .hotels .rating {
+    margin-top: 5px;
+  }
+
+  .show-more {
+    margin-top: 30px;
+    font-weight: 600;
+  }
+  a[class="show-more"] {
+    font-weight: 600;
+  }
+
+  /* --------- Activity ------- */
+
+  #activity {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 16px;
+    margin-top: 10px;
+    margin-bottom: 2em;
+  }
+
+  #activity h2 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    padding-left: 5%;
+  }
+
+  .act-wrap-1 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    margin: 10px 5% 15px 5%;
+    border-radius: 15px;
+    background-color: white;
+
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 5px 15px 0px rgba(220, 220, 220, 1);
+  }
+  .act-wrap-2 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    margin: 10px 5% 15px 5%;
+    border-radius: 15px;
+    background-color: white;
+
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 5px 15px 0px rgba(220, 220, 220, 1);
+  }
+  .act-wrap-3 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    margin: 10px 5% 15px 5%;
+    border-radius: 15px;
+    background-color: white;
+
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 5px 15px 0px rgba(220, 220, 220, 1);
+  }
+  .act-wrap-4 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    margin: 10px 5% 15px 5%;
+    border-radius: 15px;
+    background-color: white;
+
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 5px 15px 0px rgba(220, 220, 220, 1);
+  }
+  .act-wrap-5 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    margin: 10px 5% 15px 5%;
+    border-radius: 15px;
+    background-color: white;
+
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 5px 15px 0px rgba(220, 220, 220, 1);
+  }
+  .act-wrap-6 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    margin: 10px 5% 15px 5%;
+    border-radius: 15px;
+    background-color: white;
+
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 5px 15px 0px rgba(220, 220, 220, 1);
+  }
+  .image-1 {
+    height: 135px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-image: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image-2 {
+    height: 135px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image-3 {
+    height: 135px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-image: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image-4 {
+    height: 135px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image-5 {
+    height: 135px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-image: url("images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image-6 {
+    height: 135px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-image: url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #activity span {
+    font-weight: bold !important;
+    margin: 15px 0px 15px 10px;
+    padding-left: 10px;
+  }
+
+  /* foooter ---------- */
+
+  footer {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #f2f2f2;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  footer div {
+    padding-left: 5%;
+  }
+
+  footer h5 {
+    padding: 0 !important;
+  }
+  ul {
+    list-style-type: none;
+    margin: 15px 0 15px 0;
+    padding: 0;
+  }
+
+  li {
+    line-height: 30px;
+  }
+
+  .main-sections-row {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: stretch;
+    margin: 40px 0 0 0;
+  }
+  .main-sections-row > #accom,
+  .main-sections-row > #most-popular {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* -----------------------
+Other divices
+-------------------------------------*/
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+@media screen and (min-width: 1024px) {
+  * {
+    font-family: "Raleway", sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 1.3em;
+  }
+  h2 {
+    font-size: 1.1em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  h4 {
+    font-size: 0.9em;
+  }
+  h5 {
+    font-size: 0.8em;
+    margin-top: 10px;
+  }
+  h6 {
+    font-size: 0.7em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: #000;
+  }
+
+  #body-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0px 3% 0px 3%;
+  }
+
+  .logo-reservia {
+    height: 3em;
+    margin-top: 12px;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-grow: 4;
+  }
+
+  .nav-item1 {
+    /*Accommodations*/
+    align-self: flex-start;
+    flex-grow: 0;
+    font-size: 0.8em;
+    margin-right: 3%;
+    padding-top: 30px;
+  }
+
+  a.nav-item1:hover,
+  a.nav-item2:hover {
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+  }
+
+  a.nav-item1:active,
+  a.nav-item2:active {
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+  }
+
+  .nav-item2 {
+    /*Activities*/
+    align-self: flex-start;
+    flex-grow: 0;
+
+    font-size: 0.8em;
+    margin-right: 3%;
+
+    padding-top: 30px;
+  }
+  .nav-item3 {
+    /*SignUp*/
+    align-self: flex-start;
+    display: flex;
+    flex-grow: 0;
+    font-size: 0.8em;
+    color: #0065fc;
+    padding-top: 30px;
+  }
+
+  .nav-item3 a {
+    color: #0065fc;
+    font-weight: 600;
+  }
+  /* SEARCH FIELD*/
+
+  .item-search {
+    margin-top: 20px;
+    padding-left: 3%;
+  }
+
+  .search-box {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+
+  .search-field {
+    margin: 0;
+    width: 25%;
+
+    font-size: 1em;
+    font-weight: 600;
+    border: 2px solid #f2f2f2;
+    height: 44px;
+  }
+
+  input {
+    padding-left: 10px;
+  }
+
+  ::placeholder {
+    font-weight: 600;
+  }
+
+  i[class="fas fa-map-marker-alt"] {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+
+    border-radius: 15px 0 0 15px;
+    font-size: 18px;
+    line-height: 50px;
+    background-color: #f2f2f2;
+  }
+
+  .search-button {
+    width: 75px;
+    height: auto;
+    margin-left: -10px;
+
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #0065fc;
+    color: #fff;
+    border: none;
+    border-radius: 0 15px 15px 0;
+  }
+
+  /* FILTERS */
+
+  #filters {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 1%;
+    padding-left: 3%;
+  }
+
+  .filter-icons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    font-weight: 600;
+    margin-left: 40px;
+    margin-right: 0px;
+    padding: 1px 20px 1px 0px;
+    border: 2px solid #f2f2f2;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-left: none;
+    border: 1px solid #ccc;
+  }
+
+  .filter-icons a {
+    padding-left: 10px;
+    font-size: 1em;
+  }
+
+  .filter-icons:hover {
+    background-color: white;
+    border-color: white;
+    border-style: inset;
+  }
+
+  i[class="fas fa-money-bill-wave"] {
+    width: 40px;
+    height: 41px;
+
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-left: -20px;
+
+    text-align: center;
+    line-height: 40px;
+    font-size: 1em;
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+  }
+
+  i[class="fas fa-heart"] {
+    width: 40px;
+    height: 41px;
+
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-left: -20px;
+
+    text-align: center;
+    line-height: 40px;
+    font-size: 1em;
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+  }
+
+  i[class="fas fa-child"] {
+    width: 40px;
+    height: 41px;
+
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-left: -20px;
+
+    text-align: center;
+    line-height: 40px;
+    font-size: 1em;
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+  }
+
+  i[class="fas fa-dog"] {
+    width: 40px;
+    height: 41px;
+
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-left: -20px;
+
+    text-align: center;
+    line-height: 40px;
+    font-size: 1em;
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+  }
+
+  .info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 400px;
+    margin-right: 500px;
+    margin-top: 15px;
+  }
+
+  .info p {
+    margin-top: 3px;
+  }
+
+  .info-icon {
+    font-family: "Georgia";
+    display: inline-block;
+    text-align: center;
+    line-height: 14px;
+    padding: 1px 1px 0px 1px;
+    width: 14px;
+    height: 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #0065fc;
+    border-radius: 50%;
+    border: 1px solid rgb(140, 140, 140);
+    margin-right: 5px;
+  }
+
+  /* ----- main section ---*/
+
+  #most-popular {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: flex-start;
+    padding: 0 3%;
+  }
+
+  #chart-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    width: 40%;
+
+    margin-left: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    border-radius: 20px;
+  }
+
+  .chart-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-top: 2%;
+  }
+
+  .chart-header h2 {
+    width: 70%;
+    padding-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  i[class="fas fa-chart-line"] {
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+    font-size: 1.4em;
+  }
+
+  .main-chart {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    height: 100%;
+  }
+  .chart-box {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 30%;
+
+    margin-bottom: 25px;
+    background-color: #fff;
+    border-radius: 20px;
+
+    box-shadow: 0px 5px 10px 0px rgba(38, 37, 37, 0.1);
+  }
+  .chart-box .chart-image-1 {
+    width: 40%;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    background-image: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .chart-box .chart-image-2 {
+    width: 40%;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    background-image: url("images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .chart-box .chart-image-3 {
+    width: 40%;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    background-image: url("images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .test {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    width: 55%;
+    padding-left: 15px;
+  }
+
+  .test h5 {
+    font-size: 0.9em;
+    margin-top: 10px;
+    margin-bottom: 0 !important;
+  }
+
+  .test br {
+    display: none;
+  }
+  .test p {
+    margin-top: 0;
+  }
+  .rating {
+    /*align-self: left;*/
+    justify-self: flex-end;
+    letter-spacing: -1px;
+  }
+
+  .gray-star {
+    font-size: 0.7em;
+    color: #a4a29b;
+  }
+
+  #accom {
+    display: flex;
+    flex-flow: row wrap;
+    padding-right: 0;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+  }
+
+  .head-accom {
+    width: 97%;
+    padding-left: 3%;
+    margin-top: 2%;
+  }
+
+  .accom-middle {
+    display: flex;
+    flex-flow: row wrap;
+    padding-right: 3%;
+  }
+  .hotel-icons {
+    width: 30%;
+    margin: 0 0 3% 3%;
+
+    background-color: #fff;
+    border-radius: 20px;
+
+    box-shadow: 0px 10px 15px 0px rgba(38, 37, 37, 0.1);
+  }
+
+  .hotels {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 15px;
+    padding-bottom: 5px;
+  }
+
+  .hotels h5 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .hotels p {
+    margin: 5px 0 0 0;
+  }
+
+  i[class="fas fa-star"] {
+    font-size: 0.7em;
+    color: #0065fc;
+  }
+
+  .show-more {
+    margin: 0 0 4% 3%;
+  }
+  .show-more a {
+    font-weight: 600;
+  }
+
+  .hotel-icons .image {
+    height: 110px;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    margin-bottom: 0;
+
+    background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .hotel-icons .image-2 {
+    height: 110px;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    margin-bottom: 0;
+
+    background-image: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .hotel-icons .image-3 {
+    height: 110px;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    margin-bottom: 0;
+
+    background-image: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .hotel-icons .image-4 {
+    height: 110px;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    margin-bottom: 0;
+
+    background-image: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .hotel-icons .image-5 {
+    height: 110px;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    margin-bottom: 0;
+
+    background-image: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .hotel-icons .image-6 {
+    height: 110px;
+    margin: 4px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    margin-bottom: 0;
+
+    background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* ..............activities in Marseille.............*/
+
+  #activity {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px repeat(9, 40px);
+    grid-column-gap: 40px;
+    padding: 25px 3% 40px 3%;
+  }
+
+  #activity h2 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    font-size: 1.5rem;
+  }
+
+  #activity h5 {
+    padding-left: 15px;
+  }
+  .act-wrap-1 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+
+    grid-column: 1;
+    grid-row: 2 / -1;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 5px 5px 0px rgba(38, 37, 37, 0.1);
+  }
+
+  .act-wrap-2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+
+    grid-column: 2;
+    grid-row: 2 / 6;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 5px 5px 0px rgba(38, 37, 37, 0.1);
+  }
+  .act-wrap-3 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    grid-column: 2;
+    grid-row: 7 / -1;
+
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px 0px rgba(38, 37, 37, 0.1);
+  }
+  .act-wrap-4 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+
+    grid-column: 3;
+    grid-row: 2 / -1;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 5px 5px 0px rgba(38, 37, 37, 0.1);
+  }
+  .act-wrap-5 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+
+    grid-column: 4;
+    grid-row: 2 / 6;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 5px 5px 0px rgba(38, 37, 37, 0.1);
+  }
+  .act-wrap-6 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+
+    grid-column: 4;
+    grid-row: 7 / -1;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 5px 5px 0px rgba(38, 37, 37, 0.1);
+  }
+
+  .image-1 {
+    height: 320px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-image: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image-2 {
+    height: 120px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image-3 {
+    height: 120px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-image: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image-4 {
+    height: 320px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image-5 {
+    height: 120px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: px;
+
+    background-image: url("images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image-6 {
+    height: 120px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-image: url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #activity span {
+    font-weight: bold !important;
+    margin: 15px 0px 15px 10px;
+    padding-left: 10px;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    padding-left: 3%;
+    padding-top: 5px;
+    background-color: #f2f2f2;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    font-size: 0.8em;
+    color: #555;
+    line-height: 25px;
+  }
+
+  .main-sections-row {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
+    margin: 40px 0 0 0;
+  }
+
+  .main-sections-row > #accom {
+    flex: 0 1 70%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-sections-row > #most-popular {
+    flex: 0 1 30%;
+    min-width: 320px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.chart {
+  display: none;
+}
+
+/* Merged from App.css */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
